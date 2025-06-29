@@ -802,7 +802,7 @@
                  <a href="#напитки" class="nav-link filter-btn">Напитки</a>
                 <a href="#коктейли" class="nav-link filter-btn">Коктейли</a>
             </nav>
-            <p class="text-gray-500 text-sm mt-4">&copy; 2025 Mazaj. Все права защищены.</p>
+            <p class="text-gray-500 text-sm mt-4">&copy; 2024 Mazaj. Все права защищены.</p>
         </div>
     </footer>
 
@@ -818,6 +818,23 @@
             const filterButtons = document.querySelectorAll('.filter-btn');
             const categories = document.querySelectorAll('.menu-category');
             const toTopButton = document.getElementById('to-top-btn');
+            
+            // --- Time-based visibility for Alcohol section ---
+            const alcoholSection = document.getElementById('коктейли');
+            const alcoholNavLinks = document.querySelectorAll('a[href="#коктейли"]');
+            const now = new Date();
+            const currentUTCHour = now.getUTCHours();
+
+            // Visible between 18:00 GMT and 02:00 GMT
+            const isAlcoholVisible = (currentUTCHour >= 18 || currentUTCHour < 2);
+
+            if (!isAlcoholVisible) {
+                if (alcoholSection) {
+                    alcoholSection.style.display = 'none';
+                }
+                alcoholNavLinks.forEach(link => link.style.display = 'none');
+            }
+
 
             // --- Category Filtering Logic ---
             const filterCategories = (filter) => {
@@ -825,8 +842,13 @@
                 categories.forEach(category => {
                     // The filter is '#all' or the category's id matches the filter
                     if (filter === '#all' || `#${category.id}` === filter) {
-                        category.style.display = 'block';
-                        hasVisibleCategory = true;
+                        // Extra check to not show time-restricted categories
+                        if (category.id === 'коктейли' && !isAlcoholVisible) {
+                            category.style.display = 'none';
+                        } else {
+                            category.style.display = 'block';
+                            hasVisibleCategory = true;
+                        }
                     } else {
                         category.style.display = 'none';
                     }
