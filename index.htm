@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Mazaj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        .title-font {
+            font-family: 'El Messiri', sans-serif;
+        }
+        .menu-category {
+            display: block;
+            scroll-margin-top: 150px; /* Offset for sticky header */
+        }
+        .nav-link {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #d4af37;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 py-4 shadow-lg shadow-black/30">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="title-font text-5xl font-bold text-white mb-4">Mazaj</h1>
+            <nav id="header-nav" class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm md:text-base">
+                <a href="#all" class="nav-link font-bold text-yellow-400 filter-btn">Все категории</a>
+                <a href="#супы" class="nav-link filter-btn">Супы</a>
+                <a href="#горячие-блюда" class="nav-link filter-btn">Горячие блюда</a>
+                <a href="#паста" class="nav-link filter-btn">Паста</a>
+                <a href="#салаты" class="nav-link filter-btn">Салаты</a>
+                <a href="#пицца-и-лепешки" class="nav-link filter-btn">Пицца и лепешки</a>
+                <a href="#горячие-закуски" class="nav-link filter-btn">Горячие закуски</a>
+                <a href="#холодные-закуски" class="nav-link filter-btn">Холодные закуски</a>
+                <a href="#десерты" class="nav-link filter-btn">Десерты</a>
+                <a href="#соусы" class="nav-link filter-btn">Соусы</a>
+                <a href="#напитки" class="nav-link filter-btn">Напитки</a>
+                <a href="#коктейли" class="nav-link filter-btn">Коктейли</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Супы -->
+        <section id="супы" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Супы</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Чечевичный суп -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Чечевичный-суп.jpg?raw=true" alt="Изображение чечевичного супа" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold title-font">Чечевичный суп</h3>
+                            <p class="text-2xl font-bold text-yellow-400 whitespace-nowrap">260 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Чечевица, Морковь, Лук репчатый, Специи, Гренки, Лимон</p>
+                    </div>
+                </div>
+                <!-- Куриный суп -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Куриный-суп.jpg?raw=true" alt="Изображение куриного супа" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold title-font">Куриный суп</h3>
+                            <p class="text-2xl font-bold text-yellow-400 whitespace-nowrap">260 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Курица, Лук, Морковь, Лапша, Зелень, Специи</p>
+                    </div>
+                </div>
+                <!-- Борщ -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Борщ.jpg?raw=true" alt="Изображение борща" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold title-font">Борщ</h3>
+                            <p class="text-2xl font-bold text-yellow-400 whitespace-nowrap">290 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Говядина, Свёкла, Морковь, Лук, Капуста белокочанная, Специи, Сметана</p>
+                    </div>
+                </div>
+                 <!-- Крем-суп из шампиньонов -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Крем-суп-из-шампиньонов.jpg?raw=true" alt="Изображение крем-супа" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                         <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold title-font">Крем-суп из шампиньонов</h3>
+                            <p class="text-2xl font-bold text-yellow-400 whitespace-nowrap">310 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Грибы шампиньоны, Лук, Картофель, Сливки 22%, Специи, Сыр Пармезан, Гренки</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Горячие блюда -->
+        <section id="горячие-блюда" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Горячие блюда</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Капсе.jpg?raw=true" alt="Изображение Капсе" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Капсе</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">450 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Курица (бедро), Рис Басмати, Лук, Морковь, Специи, Перец Болгарский, Кукуруза, Сметана</p>
+                        <p class="text-sm text-gray-400 mt-2">(300г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Запечённая-Дорада.jpg?raw=true" alt="Изображение Дорада" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Запечённая Дорада</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">590 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Рыба дорада, Лимон, Специи, Картошка фри, Соус Нашарап</p>
+                        <p class="text-sm text-gray-400 mt-2">(300г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Люля-кебаб-на-гриле.jpg?raw=true" alt="Изображение Люля-кебаб" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Люля-кебаб на гриле</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">480 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Фарш говяжий, Лук, Специи, Зелень, Картошка фри, Салат</p>
+                        <p class="text-sm text-gray-400 mt-2">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Шаурма-по-ливански%20с%20курицей.jpg?raw=true" alt="Изображение Шаурмы" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Шаурма по-ливански с курицей (на тарелке)</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">370 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Куриное филе, Огурцы солёные, Лук, Соус чесночный, Соус Нашарап, Картошка фри, Перец хлопия</p>
+                        <p class="text-sm text-gray-400 mt-2">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Шаурма-по-ливански-с-мясом.jpg?raw=true" alt="Изображение Шаурмы" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Шаурма по-ливански с мясом (на тарелке)</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">470 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Мясо говядина, Соус из тахина, Огурцы солёные, Помидоры, Лук, Петрушка</p>
+                        <p class="text-sm text-gray-400 mt-2">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Сковорода-с-курицей.jpg?raw=true" alt="Изображение Сковороды" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Сковорода с курицей</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">460 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Филе курицы, Перец болгарский, Лук, Грибы, Запеченный картофель, Соус сливочный, Сыр Моцарелла</p>
+                        <p class="text-sm text-gray-400 mt-2">(460г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Клаб-Cэндвич.jpg?raw=true" alt="Изображение Сэндвича" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Клаб-сэндвич</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">340 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Хлеб для тостов, Куриное филе, Помидор, Огурец, Листья салата, Соус, Картофель фри</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Фалафель-на-тарелке.jpg?raw=true" alt="Изображение Фалафеля" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Фалафель на тарелке</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">480 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Турецкий нут, Лук, Петрушка, Огурцы, Помидоры, Редиска, Соус из тахина</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Стейк-из-курицы.jpg?raw=true" alt="Изображение Стейка" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Стейк из курицы в сливочном соусе</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">480 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Куриная грудка, Сливки, Грибы шампиньоны, Картошка фри</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Плов-по-ливански.jpg?raw=true" alt="Изображение плова" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Плов по-ливански</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">410 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Рис Басмати, Филе курицы (грудка), Огурцы соленые, Лук маринованный, Помидоры свежие, Орешки mix</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Паста -->
+        <section id="паста" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Паста</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Тальятелле-с-курицей-и-грибами.jpg?raw=true" alt="Изображение тальятелле" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Тальятелле с курицей и грибами</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">390 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Тальятелле, Курица (филе), Грибы, Сыр Пармезан, Сливки 22%, Орегано</p>
+                        <p class="text-sm text-gray-400 mt-2">(300г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Паста-аль-помодоро.jpg?raw=true" alt="Изображение аль-помодоро" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Паста аль-помодоро</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">350 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Спагетти, Томаты, Сыр Пармезан, Орегано, Базилик</p>
+                        <p class="text-sm text-gray-400 mt-2">(300г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Феттучини-с-креветками.jpg?raw=true" alt="Изображение феттучини" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Феттучини с креветками</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">420 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Паста феттучини, Креветки тигровые, Сливки 22%, Сыр Пармезан, Орегано, Базилик</p>
+                        <p class="text-sm text-gray-400 mt-2">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Паста-Болоньезе.jpg?raw=true" alt="Изображение болоньезе" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Паста Болоньезе</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">380 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Фарш говяжий, Спагетти, Лук, Томаты, Сыр Пармезан, Орегано, Базилик</p>
+                        <p class="text-sm text-gray-400 mt-2">(250г)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Салаты -->
+        <section id="салаты" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Салаты</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/САЛАТ-Греческий.jpg?raw=true" alt="Изображение салата Греческий" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Греческий</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">380 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Помидоры, Огурцы, Перец, Лук красный, Сыр Фета, Оливки, Сок лимонный, Орегано</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/САЛАТ-Овощной.jpg?raw=true" alt="Изображение салата Овощной" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Овощной</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">330 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Огурец, Помидор, Редиска, Салат Айсберг, Лук, Оливки</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/САЛАТ-Фатуш.jpg?raw=true" alt="Изображение салата Фатуш" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Фатуш</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">350 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Помидор, Редиска, Лук красный, Оливки, Чеснок, Сок лимона, Мята, Гренки, Петрушка</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/САЛАТ-Цезарь-с-курицей.jpg?raw=true" alt="Изображение салата Цезарь" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Цезарь с курицей</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">370 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Салат Айсберг, Филе курицы, Помидоры Черри, Сыр Пармезан, Гренки, Соус Цезарь</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/САЛАТ-Цезарь-с-креветками.jpg?raw=true" alt="Изображение салата Цезарь с креветками" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Цезарь с креветками</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">410 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Салат Айсберг, Креветки тигровые, Помидоры Черри, Сыр Пармезан, Соус Цезарь</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/%D0%A0%D1%83%D0%BA%D0%BA%D0%BE%D0%BB%D0%B0-%D1%81-%D0%BA%D1%80%D0%B5%D0%B2%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8.jpg?raw=true" alt="Изображение салата Руккола" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Руккола с креветками</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">520 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Креветки тигровые, Руккола, Соус крем-бальзамик, Сыр пармезан, Помидоры черри, Соевый соус</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Пицца и лепешки -->
+        <section id="пицца-и-лепешки" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Пицца и лепешки</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/ПИЦЦА-4-Cыра.jpg?raw=true" alt="Изображение пиццы 4 сыра" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">4 сыра</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">440 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Сыр Моцарелла, Сыр Дорблю, Сыр Чеддер, Сыр Чечил, Орегано, Томатный соус</p>
+                        <p class="text-sm text-gray-400 mt-2">(400г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/ПИЦЦА-Цезарь.jpg?raw=true" alt="Изображение пиццы Цезарь" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Цезарь</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">450 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Куриное филе, Листья салата, Сыр Пармезан, Сыр Моцарелла, Соус Цезарь</p>
+                        <p class="text-sm text-gray-400 mt-2">(400г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/ПИЦЦА-Барбекю.jpg?raw=true" alt="Изображение пиццы Барбекю" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Барбекю</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">430 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Куриное филе, Томаты, Перец болгарский, Сыр Моцарелла, Грибы шампиньоны, Соус Барбекю</p>
+                        <p class="text-sm text-gray-400 mt-2">(400г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/ПИЦЦА-Вегетарианская.jpg?raw=true" alt="Изображение пиццы Вегетарианская" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Вегетарианская</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">410 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Томаты, Лук, Сыр Моцарелла, Оливки, Перец болгарский, Кукуруза, Базилик</p>
+                        <p class="text-sm text-gray-400 mt-2">(400г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/ПИЦЦА-Маргарита.jpg?raw=true" alt="Изображение пиццы Маргарита" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Маргарита</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">390 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">Сыр Моцарелла, Томат, Базилик</p>
+                        <p class="text-sm text-gray-400 mt-2">(400г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Лепешка-с-затаром.jpg?raw=true" alt="Изображение лепешки" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Лепешка с затаром</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">380 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Лепешка-с-сыром.jpg?raw=true" alt="Изображение лепешки" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Лепешка с сыром</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">410 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Горячие закуски -->
+        <section id="горячие-закуски" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Горячие закуски</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Араис-с-Cыром.jpg?raw=true" alt="Изображение Араиса" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Араис с сыром</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">380 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(150 г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Араис-с-Mясом.jpg?raw=true" alt="Изображение Араиса" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Араис с мясом</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">420 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Овощи-на-гриле.jpg?raw=true" alt="Изображение овощей на гриле" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Овощи на гриле</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">330 ₽</p>
+                        </div>
+                         <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Куриные-крылышки.jpg?raw=true" alt="Изображение крылышек" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Куриные крылышки</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">340 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Жареные-креветки.jpg?raw=true" alt="Изображение креветок" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Жареные креветки</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">450 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(150г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Картофель-фри.jpg?raw=true" alt="Изображение картофеля фри" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Картофель фри</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">250 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Фуль.jpg?raw=true" alt="Изображение Фуля" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Фуль</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">450 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(300г)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Сырные-палочки.jpg?raw=true" alt="Изображение сырных палочек" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Сырные палочки</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">350 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Холодные закуски -->
+        <section id="холодные-закуски" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Холодные закуски</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Хумус.jpg?raw=true" alt="Изображение Хумуса" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Хумус</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">340 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Бабаганудж.jpg?raw=true" alt="Изображение Бабаганудж" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Бабаганудж</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">380 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Мутабаль.jpg?raw=true" alt="Изображение Мутабаля" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Мутабаль</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">390 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(200г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Соленья.jpg?raw=true" alt="Изображение солений" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Соленья</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">370 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Сырная-тарелка.jpg?raw=true" alt="Изображение сырной тарелки" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Сырная тарелка</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">390 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(250г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Овощная-тарелка.jpg?raw=true" alt="Изображение овощной тарелки" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Овощная тарелка</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">370 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400">(250г)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Десерты -->
+        <section id="десерты" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Десерты</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Кнафе.jpg?raw=true" alt="Изображение Кнафе" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Кнафе</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">250 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2">(150г)</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Пахлава.jpg?raw=true" alt="Изображение Пахлавы" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Пахлава</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">260 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2">(6шт)</p>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://github.com/mazaj-menu/dishes/blob/main/images/Фруктовая-Bаза.jpg?raw=true" alt="Изображение фруктовой вазы" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold title-font">Фруктовая ваза</h3>
+                            <p class="text-xl font-bold text-yellow-400 whitespace-nowrap">1200 ₽</p>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2">(1.5 кг)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Соусы -->
+        <section id="соусы" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Соусы</h2>
+            <div class="max-w-md mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+                <div class="flex justify-between py-2 border-b border-gray-700"><span class="title-font">Кетчуп</span> <span class="text-yellow-400 font-bold">60 ₽</span></div>
+                <div class="flex justify-between py-2 border-b border-gray-700"><span class="title-font">Майонез</span> <span class="text-yellow-400 font-bold">60 ₽</span></div>
+                <div class="flex justify-between py-2 border-b border-gray-700"><span class="title-font">Чесночный</span> <span class="text-yellow-400 font-bold">60 ₽</span></div>
+                <div class="flex justify-between py-2 border-b border-gray-700"><span class="title-font">Барбекю</span> <span class="text-yellow-400 font-bold">80 ₽</span></div>
+                <div class="flex justify-between py-2 border-b border-gray-700"><span class="title-font">Нашарап</span> <span class="text-yellow-400 font-bold">90 ₽</span></div>
+                <div class="flex justify-between py-2 border-b border-gray-700"><span class="title-font">Сметана</span> <span class="text-yellow-400 font-bold">60 ₽</span></div>
+                <div class="flex justify-between py-2"><span class="title-font">Спец.Заказ</span> <span class="text-yellow-400 font-bold">110 ₽</span></div>
+            </div>
+        </section>
+
+        <!-- Напитки -->
+        <section id="напитки" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Напитки</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Холодные напитки -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold title-font mb-4 text-center">Холодные Напитки</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Кола ж.б 0,33л</span> <span class="text-yellow-400 font-bold">130 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Фанта ж.б 0,33л</span> <span class="text-yellow-400 font-bold">130 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Спрайт ж.б 0,33л</span> <span class="text-yellow-400 font-bold">130 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Вода 0,5л</span> <span class="text-yellow-400 font-bold">90 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Сок в Ассортименте 1л</span> <span class="text-yellow-400 font-bold">350 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Сок в Ассортименте 0,2л</span> <span class="text-yellow-400 font-bold">100 ₽</span></div>
+                        <div class="flex justify-between py-1"><span>Редбулл 0,25</span> <span class="text-yellow-400 font-bold">190 ₽</span></div>
+                    </div>
+                </div>
+                <!-- Горячие напитки -->
+                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold title-font mb-4 text-center">Горячие Напитки</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Чай 600 мл в Ассортименте</span> <span class="text-yellow-400 font-bold">290 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Чай/Чашка 125мл</span> <span class="text-yellow-400 font-bold">70 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Кипяток</span> <span class="text-yellow-400 font-bold">100 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Кофе Эспрессо 60мл</span> <span class="text-yellow-400 font-bold">100 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Кофе Американо 150мл</span> <span class="text-yellow-400 font-bold">140 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Капучино 150мл</span> <span class="text-yellow-400 font-bold">160 ₽</span></div>
+                        <div class="flex justify-between py-1"><span>Натуральные добавки к чаю</span> <span class="text-yellow-400 font-bold">50 ₽</span></div>
+                    </div>
+                </div>
+                <!-- Пиво и закуски -->
+                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold title-font mb-4 text-center">Пиво</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Essa 0,45л</span> <span class="text-yellow-400 font-bold">200 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Kozel Тёмный 0,45л</span> <span class="text-yellow-400 font-bold">200 ₽</span></div>
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Heineken 0,33л</span> <span class="text-yellow-400 font-bold">200 ₽</span></div>
+                        <div class="flex justify-between py-1"><span>Корона Экстра 0,33л</span> <span class="text-yellow-400 font-bold">250 ₽</span></div>
+                    </div>
+                    <h3 class="text-2xl font-bold title-font mt-6 mb-4 text-center">Закуски к пиву</h3>
+                     <div class="space-y-2">
+                        <div class="flex justify-between border-b border-gray-700/50 py-1"><span>Чипсы (100г)</span> <span class="text-yellow-400 font-bold">200 ₽</span></div>
+                        <div class="flex justify-between py-1"><span>Арахис (100г)</span> <span class="text-yellow-400 font-bold">200 ₽</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Коктейли -->
+        <section id="коктейли" class="menu-category my-12">
+            <h2 class="title-font text-4xl font-bold text-center mb-8 border-b-2 border-yellow-400 pb-2">Алкогольные напитки</h2>
+            <div class="grid lg:grid-cols-2 gap-x-8 gap-y-6">
+                <!-- Cocktails List -->
+                <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                    <h3 class="text-2xl font-bold title-font mb-4 text-center">Коктейли</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Пина колада</h4><p class="text-xs text-gray-400">ром, кокосовый сироп, ананасовый сок, сливки, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Лонг Айленд Айс Ти</h4><p class="text-xs text-gray-400">джин, водка, текила, ром, трипл-сек, лимонный сок, кола, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">450 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Зеленая фея</h4><p class="text-xs text-gray-400">водка, текила, ром, абсент, блю кюрасао, дынный ликер, сок, энергетик</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">490 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Бейлис кофе</h4><p class="text-xs text-gray-400">бейлис, эспрессо, сливки, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">420 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Куба либре</h4><p class="text-xs text-gray-400">ром тёмный, кока-кола, лайм, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">450 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Май тай</h4><p class="text-xs text-gray-400">ром, трипл-сек, соки, сиропы, мята, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">450 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Мохито</h4><p class="text-xs text-gray-400">ром, сок лайма, сироп, мята, спрайт, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Текила Санрайз</h4><p class="text-xs text-gray-400">текила, гренадин, апельсиновый сок, апельсин, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Голубые Гавайи</h4><p class="text-xs text-gray-400">ром, ананасовый сок, блю кюрасао, малибу, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">420 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Маргарита</h4><p class="text-xs text-gray-400">текила, трипл-сек, сироп, соки, соль, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">420 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Маргарита клубничная</h4><p class="text-xs text-gray-400">текила, трипл-сек, сок, сироп, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">420 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Виски Sour</h4><p class="text-xs text-gray-400">бурбон, сироп, белок, сок, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">500 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Манхэттен</h4><p class="text-xs text-gray-400">бурбон, биттер, вермут, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">500 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Апероль Шприц</h4><p class="text-xs text-gray-400">апероль, просекко, содовая, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">490 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Джин-тоник</h4><p class="text-xs text-gray-400">джин, тоник, лайм, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">380 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Том Коллинз</h4><p class="text-xs text-gray-400">джин, сироп, сок, содовая, апельсин, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Клевер Клуб</h4><p class="text-xs text-gray-400">джин, сироп, сок, белок, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">420 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Секс на пляже</h4><p class="text-xs text-gray-400">водка, ликер, соки, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Белый русский</h4><p class="text-xs text-gray-400">водка, кофейный ликёр, сливки, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Чёрный русский</h4><p class="text-xs text-gray-400">водка, кофейный ликёр, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">370 ₽</span></div>
+                        <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Кайпироска</h4><p class="text-xs text-gray-400">водка, сироп, лайм, лёд</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                        <div class="flex justify-between items-start text-red-500 font-bold"><div class="max-w-sm"><h4 class="title-font">«Пьешь до дна - проснёшься не одна»</h4><p class="text-xs text-gray-400">♠️♠️♠️ Фирменный коктейль МАЗАЖ ♠️♠️♠️</p></div> <span class="text-red-400 whitespace-nowrap">700 ₽</span></div>
+                    </div>
+                </div>
+                 <!-- Other Alcohol -->
+                 <div class="space-y-6">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold title-font mb-4 text-center">Крепкие напитки и Вино</h3>
+                        <!-- Table for spirits -->
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm">
+                                <thead class="border-b border-gray-600">
+                                    <tr>
+                                        <th class="py-2">Напиток</th>
+                                        <th class="text-center py-2">50мл</th>
+                                        <th class="text-center py-2">500мл</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Водка</td></tr>
+                                    <tr><td class="py-1 pl-4">Талка</td><td class="text-center py-1">150 ₽</td><td class="text-center py-1">1500 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Рус.стандарт</td><td class="text-center py-1">170 ₽</td><td class="text-center py-1">1700 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Царская</td><td class="text-center py-1">180 ₽</td><td class="text-center py-1">1800 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Белуга</td><td class="text-center py-1">280 ₽</td><td class="text-center py-1">2800 ₽</td></tr>
+                                    <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Виски</td></tr>
+                                    <tr><td class="py-1 pl-4">Ред Лейбл</td><td class="text-center py-1">300 ₽</td><td class="text-center py-1">3000 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Джеймсон</td><td class="text-center py-1">430 ₽</td><td class="text-center py-1">4300 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Джим Бим</td><td class="text-center py-1">350 ₽</td><td class="text-center py-1">3500 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Джек Дениелс</td><td class="text-center py-1">450 ₽</td><td class="text-center py-1">4500 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Блэк лейбл</td><td class="text-center py-1">500 ₽</td><td class="text-center py-1">5000 ₽</td></tr>
+                                    <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Коньяк</td></tr>
+                                    <tr><td class="py-1 pl-4">Арарат ***</td><td class="text-center py-1">290 ₽</td><td class="text-center py-1">2900 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Арарат *****</td><td class="text-center py-1">320 ₽</td><td class="text-center py-1">3200 ₽</td></tr>
+                                    <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Текила</td></tr>
+                                    <tr><td class="py-1 pl-4">Сауза Серебрянная</td><td class="text-center py-1">300 ₽</td><td class="text-center py-1">3000 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Ольмека Серебрянная</td><td class="text-center py-1">400 ₽</td><td class="text-center py-1">4000 ₽</td></tr>
+                                    <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Ром</td></tr>
+                                    <tr><td class="py-1 pl-4">Бакарди Светлый</td><td class="text-center py-1">300 ₽</td><td class="text-center py-1">3000 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Бакарди Тёмный</td><td class="text-center py-1">300 ₽</td><td class="text-center py-1">3000 ₽</td></tr>
+                                     <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Джин</td></tr>
+                                    <tr><td class="py-1 pl-4">Бифитер</td><td class="text-center py-1">300 ₽</td><td class="text-center py-1">3000 ₽</td></tr>
+                                    <tr class="border-b border-gray-700/50"><td class="py-2 font-bold" colspan="3">Мартини</td></tr>
+                                    <tr><td class="py-1 pl-4">Бианко</td><td class="text-center py-1">290 ₽</td><td class="text-center py-1">2900 ₽</td></tr>
+                                    <tr><td class="py-1 pl-4">Фиеро</td><td class="text-center py-1">290 ₽</td><td class="text-center py-1">2900 ₽</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h4 class="font-semibold title-font mt-4 mb-2 border-b border-gray-600 pb-1">Ликеры <span class="text-xs text-gray-400">(50мл)</span></h4>
+                        <div class="grid grid-cols-2 gap-x-4">
+                            <div class="flex justify-between"><span>Абсент</span> <span class="text-yellow-400 font-bold">320 ₽</span></div>
+                            <div class="flex justify-between"><span>Бейлис</span> <span class="text-yellow-400 font-bold">350 ₽</span></div>
+                            <div class="flex justify-between"><span>Самбука</span> <span class="text-yellow-400 font-bold">320 ₽</span></div>
+                            <div class="flex justify-between"><span>Егермейстер</span> <span class="text-yellow-400 font-bold">310 ₽</span></div>
+                            <div class="flex justify-between"><span>Апероль</span> <span class="text-yellow-400 font-bold">300 ₽</span></div>
+                        </div>
+                        <h4 class="font-semibold title-font mt-4 mb-2 border-b border-gray-600 pb-1">Шампанское <span class="text-xs text-gray-400">(750мл)</span></h4>
+                        <div class="flex justify-between"><span>Санто Стефано</span> <span class="text-yellow-400 font-bold">1300 ₽</span></div>
+                        <div class="flex justify-between"><span>Мондоро Просекко</span> <span class="text-yellow-400 font-bold">2500 ₽</span></div>
+                        <h4 class="font-semibold title-font mt-4 mb-2 border-b border-gray-600 pb-1">Вино</h4>
+                        <div>
+                            <span>Испанское красное пс/с</span>
+                            <div class="flex justify-between text-sm ml-4"><span>150мл</span> <span class="text-yellow-400 font-bold">360 ₽</span></div>
+                            <div class="flex justify-between text-sm ml-4"><span>750мл</span> <span class="text-yellow-400 font-bold">1800 ₽</span></div>
+                        </div>
+                         <div class="mt-2">
+                            <span>Испанское белое пс/с</span>
+                            <div class="flex justify-between text-sm ml-4"><span>150мл</span> <span class="text-yellow-400 font-bold">360 ₽</span></div>
+                            <div class="flex justify-between text-sm ml-4"><span>750мл</span> <span class="text-yellow-400 font-bold">1800 ₽</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg mt-6">
+                         <h3 class="text-2xl font-bold title-font mb-4 text-center">Шоты</h3>
+                         <div class="space-y-3">
+                            <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Б-52</h4><p class="text-xs text-gray-400">Калуа, Бейлис, Куантро (20/20/20мл)</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">450 ₽</span></div>
+                            <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Б-53</h4><p class="text-xs text-gray-400">Калуа, Бейлис, Абсент (20/20/20мл)</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">450 ₽</span></div>
+                             <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Инфаркт</h4><p class="text-xs text-gray-400">Самбука, Текила, Табаско (25/25/10мл)</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">450 ₽</span></div>
+                             <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Кукарача</h4><p class="text-xs text-gray-400">Водка, Калуа, Текила (20/15/15мл)</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                              <div class="flex justify-between items-start "><div class="max-w-sm"><h4 class="font-semibold title-font">Боярский</h4><p class="text-xs text-gray-400">Водка, Гренадин, Табаско (20/15/15мл)</p></div> <span class="font-bold text-yellow-400 whitespace-nowrap">390 ₽</span></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-12 py-6 border-t border-gray-700">
+        <div class="container mx-auto px-4 text-center">
+             <nav id="footer-nav" class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm">
+                <a href="#all" class="nav-link font-bold text-yellow-400 filter-btn">Все категории</a>
+                <a href="#супы" class="nav-link filter-btn">Супы</a>
+                <a href="#горячие-блюда" class="nav-link filter-btn">Горячие блюда</a>
+                <a href="#паста" class="nav-link filter-btn">Паста</a>
+                <a href="#салаты" class="nav-link filter-btn">Салаты</a>
+                <a href="#пицца-и-лепешки" class="nav-link filter-btn">Пицца и лепешки</a>
+                <a href="#горячие-закуски" class="nav-link filter-btn">Горячие закуски</a>
+                <a href="#холодные-закуски" class="nav-link filter-btn">Холодные закуски</a>
+                <a href="#десерты" class="nav-link filter-btn">Десерты</a>
+                <a href="#соусы" class="nav-link filter-btn">Соусы</a>
+                 <a href="#напитки" class="nav-link filter-btn">Напитки</a>
+                <a href="#коктейли" class="nav-link filter-btn">Коктейли</a>
+            </nav>
+            <p class="text-gray-500 text-sm mt-4">&copy; 2024 Mazaj. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="to-top-btn" class="hidden fixed bottom-5 right-5 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const categories = document.querySelectorAll('.menu-category');
+            const toTopButton = document.getElementById('to-top-btn');
+
+            // --- Category Filtering Logic ---
+            const filterCategories = (filter) => {
+                let hasVisibleCategory = false;
+                categories.forEach(category => {
+                    // The filter is '#all' or the category's id matches the filter
+                    if (filter === '#all' || `#${category.id}` === filter) {
+                        category.style.display = 'block';
+                        hasVisibleCategory = true;
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+                
+                // If a specific category is selected, scroll to it
+                if (filter !== '#all' && hasVisibleCategory) {
+                   document.querySelector(filter).scrollIntoView();
+                }
+            };
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const filter = this.getAttribute('href');
+                    
+                    // Update active link style
+                    filterButtons.forEach(btn => btn.classList.remove('text-yellow-400', 'font-bold'));
+                    // Re-apply active style to all matching links (header and footer)
+                    document.querySelectorAll(`.filter-btn[href="${filter}"]`).forEach(activeBtn => {
+                         activeBtn.classList.add('text-yellow-400', 'font-bold')
+                    });
+                    
+                    if(filter === '#all'){
+                         document.querySelectorAll('.filter-btn:not([href="#all"])').forEach(btn => btn.classList.remove('text-yellow-400', 'font-bold'));
+                    }
+
+
+                    filterCategories(filter);
+                });
+            });
+
+
+            // --- Scroll to Top Button Logic ---
+            window.onscroll = function() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    toTopButton.style.display = 'flex';
+                } else {
+                    toTopButton.style.display = 'none';
+                }
+            };
+
+            toTopButton.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
